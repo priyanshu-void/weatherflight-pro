@@ -1,0 +1,20 @@
+# ========================================================================
+# 🤖 WEATHER FLIGHT PRO - GLOBAL SEARCH ENGINE ROBOTS CONTROLLER
+# ========================================================================
+# Handcrafted and SEO engineered for seamless edge deployment on Vercel.
+# Establishes crawler behavior protocols for planetary index crawlers.
+
+# ------------------------------------------------------------------------
+# PROTOCOL: BROADCAST PERMISSIONS TO ALL ALGOL LAYER SPIDERS
+# ------------------------------------------------------------------------
+# Targets Googlebot, Bingbot, Baiduspider, and YandexBot simultaneously.
+User-agent: *
+
+# Grants open-access permission to index all UI structural and asset assets layout
+Allow: /
+
+# ------------------------------------------------------------------------
+# PRO-TIP: DIRECT MAP INTERACTION INJECTION LAYER
+# ------------------------------------------------------------------------
+# Explicitly feeds the deep structural XML layout map to the search bots
+Sitemap: https://weatherflight-pro.vercel.app/

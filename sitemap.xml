@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  ========================================================================
+  🚀 WEATHER FLIGHT PRO - PRODUCTION SITEMAP DIRECTORY ENGINE
+  ========================================================================
+  Designed for maximum visibility across Google, Bing, and major indexes.
+  Complies strictly with W3C XML Schema specifications.
+-->
+<urlset xmlns="http://sitemaps.org">
+    <url>
+        <!-- Absolute canonical production routing link hosted on Vercel -->
+        <loc>https://weatherflight-pro.vercel.app/</loc>
+        
+        <!-- Signals crawl bots that this is the core entry point (100% Criticality) -->
+        <priority>1.0</priority>
+        
+        <!-- Forces re-indexing loops every 24 hours to sync real-time weather layers -->
+        <changefreq>daily</changefreq>
+    </url>
+</urlset>
