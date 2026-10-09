@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========================================== -->
+    <!-- 🚀 ULTRA-AGGRESSIVE INDUSTRIAL SEO METRICS  -->
+    <!-- ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Flight Pro | Ultimate Tourism Radar & Meteorological Analytics Engine</title>
+    
+    <meta name="description" content="Discover global climates with Weather Flight Pro. High-fidelity planetary map interfaces tracking real-time temperature, comprehensive 5-day predictive forecasts, air pollution grids, and instant geo-location discovery mechanics.">
+    <meta name="keywords" content="weather flight, live weather radar, global tourism map, climate forecast analyzer, jyotirlinga tracker, real-time weather alerts, hyper-local climate intelligence, beautiful mountains, best beaches, historical temples">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://weather-flight-pro.vercel.app/">
+    
+    <!-- Open Graph Protocol (OG Tags) for High-Impact Social Media Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Weather Flight Pro | Advanced Planetary Climate Analytics Terminal">
+    <meta property="og:description" content="Immersive neon-glassmorphism meteorological maps tracking real-time atmospheric indices, 5-day predictive grids, and hyper-precise tourism locations globally. Optimized for instant Vercel delivery.">
+    <meta property="og:url" content="https://weather-flight-pro.vercel.app/">
+    <meta property="og:site_name" content="Weather Flight Intelligence">
+    
+    <!-- Twitter Cards Engine Configurations -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Weather Flight Pro Terminal">
+    <meta name="twitter:description" content="Deploying elite real-time climate telemetry tracking overlays alongside responsive particle micro-simulators. Built for next-generation planetary telemetry.">
+    
+    <!-- Google Fonts for Ultra-Premium Handcrafted Humanistic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet Integrations: Tailwind CSS Engine & Leaflet Core Map Layout -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        /* Base Canvas Resets Mapping Full-Screen Boundaries */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #020617;
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        /* High-Definition Particle Control Screen Filters Overlay */
+        #weatherParticleCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        /* Premium Slate Glassmorphism Layout Definitions */
+        .glass-terminal {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(24px) saturate(170%);
+            -webkit-backdrop-filter: blur(24px) saturate(170%);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        /* Complete Overhaul For Leaflet Core Control Components Map Layout styles */
+        .leaflet-bar {
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border-radius: 12px !important;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .leaflet-bar a {
+            background-color: #0f172a !important;
+            color: #94a3b8 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+            font-weight: 700 !important;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+
+        .leaflet-bar a:hover {
+            background-color: #1e293b !important;
+            color: #ffffff !important;
+        }
+
+        .leaflet-control-layers {
+            background: rgba(15, 23, 42, 0.9) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #f1f5f9 !important;
+            font-weight: 600 !important;
+            font-size: 12px !important;
+            border-radius: 14px !important;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6) !important;
+            padding: 8px 12px !important;
+        }
+
+        .leaflet-popup-content-wrapper {
+            background: #0f172a !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #ffffff !important;
+            border-radius: 12px !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .leaflet-popup-tip {
+            background: #0f172a !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Custom Scrollbar Stripper Engine */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Dynamic Visual Micro-Transitions mapping configurations */
+        input, button, div, span {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="w-screen h-screen text-slate-200 antialiased tracking-wide select-none">
+
+    <!-- CANVAS ELEMENT LAYER A: GEOSPATIAL MAP LAYOUT ENGINE -->
+    <div id="map"></div>
+
+    <!-- CANVAS ELEMENT LAYER B: WEATHER MICRO-SIMULATOR PARTICLE ENGINE OVERLAY -->
+    <canvas id="weatherParticleCanvas"></canvas>
+
+    <!-- CONTAINER LAYER C: CONTROL INTERFACES FOREGROUND WRAPPER -->
+    <div class="absolute inset-0 w-full h-full flex flex-col justify-between pointer-events-none z-20">
+        
+        <!-- HIGH-TECH DEPLOYABLE NAVIGATION CONTROL STATION HEADER PANEL -->
+        <header class="w-full bg-slate-900/90 border-b border-white/10 px-4 md:px-6 py-4 flex flex-col lg:flex-row gap-4 justify-between items-center shadow-[0_10px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl pointer-events-auto">
+            
+            <!-- BRAND LOGO GRID MODULE NODE -->
+            <div class="flex gap-3 items-center min-w-[240px] justify-between lg:justify-start w-full lg:w-auto">
+                <div class="flex gap-3 items-center">
+                    <div class="bg-blue-500/10 p-2.5 rounded-xl border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-lg font-extrabold tracking-tight text-white uppercase">Weather Flight Pro</span>
+                        <span class="text-[9px] text-blue-400 font-bold uppercase tracking-widest">Planetary Analytics Station</span>
+                    </div>
+                </div>
+                <!-- Mobile Quick Monitor Toggle -->
+                <button type="button" id="navCheckWeather" class="lg:hidden bg-slate-800 hover:bg-slate-700 text-white text-[11px] font-bold px-3 py-2 rounded-lg border border-white/10 transition">
+                    Monitor
+                </button>
+            </div>
+
+            <!-- GEOSPATIAL DISCOVERY SEARCH CONSOLE -->
+            <div class="relative w-full max-w-xl flex flex-col items-center">
+                <div class="w-full flex items-center relative">
+                    <input type="text" id="poiInput" placeholder="Search weather for your desired place..." autocomplete="off" class="w-full bg-slate-950/80 border border-white/10 p-3.5 pr-28 rounded-xl text-left text-xs font-semibold text-slate-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 placeholder-slate-500 shadow-2xl">
+                    <div class="absolute right-3 flex items-center gap-1.5 text-slate-400 font-bold text-[9px] bg-slate-900 px-2 py-1 rounded border border-white/10">CONSOLE</div>
+                </div>
+                
+                <!-- AUTOCOMPLETE DROPDOWN OVERLAY (SMART DROPDOWN ALIGNED UNDER SEARCH CONSOLE) -->
+                <div id="autocompleteDropdown" class="absolute left-0 right-0 top-full mt-2 max-h-64 overflow-y-auto bg-slate-900/95 border border-white/10 rounded-xl shadow-2xl hidden z-50 text-left no-scrollbar"></div>
+            </div>
+
+            <!-- TOP DEPLOYMENT CONFIGURATION MANAGEMENT TERMINAL LINK SYSTEM -->
+            <nav class="hidden lg:flex gap-3 items-center">
+                <button type="button" onclick="document.getElementById('weatherCard').classList.toggle('hidden'); if(!document.getElementById('weatherCard').classList.contains('hidden')) document.getElementById('weatherCard').classList.add('flex');" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold tracking-wide px-4 py-2.5 rounded-xl border border-white/10 cursor-pointer transition uppercase">
+                    Workspace Monitor
+                </button>
+            </nav>
+        </header>
+
+        <!-- DYNAMIC LAYOUT AREA INTERACTION PANELS SPACE CONTROLLERS -->
+        <div class="flex-grow w-full relative flex flex-col justify-between p-4 md:p-6 overflow-hidden items-center lg:items-stretch">
+            
+            <!-- LEFT LAYER DISCOVERY PANELS SIDEBAR (DYNAMIC DISCOVERIES SHIFTS TO SIDEBAR ONLY WHEN TRIGGERED) -->
+            <div id="placesSidebar" class="w-full sm:w-80 glass-terminal rounded-2xl p-4 hidden flex-col gap-3 h-fit max-h-[40vh] lg:max-h-[60vh] overflow-hidden border-white/10 absolute left-4 md:left-6 top-4 pointer-events-auto shadow-2xl">
+                <div class="flex justify-between items-center border-b border-white/10 pb-2">
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-200 tracking-wide uppercase">Target Discoveries</h4>
+                        <p class="text-[9px] text-slate-500 font-bold uppercase tracking-wider">Spatial Mapping Aggregates</p>
+                    </div>
+                    <button id="closeSidebarBtn" class="text-[10px] bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white px-2 py-1 rounded-md font-bold cursor-pointer transition">✕ Clear</button>
+                </div>
+                <div id="placesListContainer" class="flex-grow overflow-y-auto flex flex-col gap-1.5 pr-1 no-scrollbar"></div>
+            </div>
+
+            <!-- MANUAL ADAPTIVE ENVIRONMENT CONTROLS OVERLAY (FLOATING ADAPTIVE COMPONENT FOR WEATHER LAYERS) -->
+            <div class="absolute right-4 top-4 glass-terminal p-3 rounded-xl border-white/10 pointer-events-auto flex flex-col gap-2 max-w-[160px] sm:max-w-none shadow-xl">
+                <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest border-b border-white/5 pb-1">Live Map Layers</span>
+                <div class="flex flex-col sm:flex-row gap-1.5">
+                    <button id="simRainBtn" class="bg-slate-900 border border-white/10 hover:border-blue-500/50 text-slate-300 font-semibold text-[10px] px-2.5 py-1.5 rounded-lg cursor-pointer flex items-center gap-1 hover:bg-slate-800 transition">
+                        🌧️ Rain
+                    </button>
+                    <button id="simSnowBtn" class="bg-slate-900 border border-white/10 hover:border-blue-400/50 text-slate-300 font-semibold text-[10px] px-2.5 py-1.5 rounded-lg cursor-pointer flex items-center gap-1 hover:bg-slate-800 transition">
+                        ❄️ Snow
+                    </button>
+                    <button id="simClearBtn" class="bg-slate-950 border border-red-500/20 text-red-400 hover:bg-red-950/30 font-semibold text-[10px] px-2.5 py-1.5 rounded-lg cursor-pointer flex items-center gap-1 transition">
+                        ✕ Clear
+                    </button>
+                </div>
+            </div>
+
+            <!-- DYNAMIC DUAL VIEWS CENTRAL PRESENTATION BLOCK (WORKSPACE AREA) -->
+            <div class="w-full flex flex-col justify-end items-center pointer-events-none mt-auto">
+                
+                <!-- THE WIDE SCREEN ADAPTIVE DASHBOARD INTERFACE (100% RESPONSIVE GRIDS SHIFTS - NO MORE FIXED BOX OVERFLOWS) -->
+                <div id="weatherCard" class="glass-terminal p-5 md:p-6 rounded-3xl w-full max-w-5xl flex flex-col gap-5 pointer-events-auto transition-all duration-500 transform scale-100 opacity-100 mb-2 max-h-[50vh] lg:max-h-none overflow-y-auto lg:overflow-visible no-scrollbar">
+                    
+                    <!-- WORKSPACE ADMINISTRATIVE BAR WITH INTEGRATED STATION STATION QUERY SUBMISSION FORM -->
+                    <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 border-b border-white/10 pb-3">
+                        <div class="text-left w-full sm:w-auto">
+                            <h2 class="text-base font-extrabold tracking-tight text-white uppercase">Atmospheric Matrix Grid</h2>
+                            <p class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Planetary Analytics Station</p>
+                        </div>
+                        
+                        <form id="weatherForm" class="flex items-center gap-2 w-full sm:w-auto max-w-md flex-grow justify-end">
+                            <input type="text" id="cityInput" placeholder="Manual Station Query" required autocomplete="off" class="w-full sm:w-48 bg-slate-950/60 border border-white/10 p-2 rounded-xl text-center text-xs font-semibold text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 tracking-wide">
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-500 text-white font-bold tracking-wide text-xs px-4 py-2 rounded-xl shadow-md cursor-pointer uppercase transition transform active:scale-95">
+                                Execute
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- CONNECTION CONTROL DISPATCH BUTTON ROUTED INDEPENDENTLY -->
+                    <button type="button" id="locateBtn" class="w-full bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/10 font-bold tracking-wider text-xs p-3 rounded-xl shadow-lg flex items-center justify-center gap-2 cursor-pointer transform active:scale-98 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+                        CONNECT DEVICE GPS SYSTEM (LOCATE ME)
+                    </button>
+
+                    <!-- METEOROLOGICAL PRESENTATION ROW (RESPONSIVE GRID MATRIX: CONVERTS TO ROWS ON PHONES AUTOMATICALLY) -->
+                    <div id="weatherDisplay" class="w-full hidden flex-col lg:flex-row gap-5 items-stretch justify-between text-white">
+                        
+                        <!-- LAYOUT BLOCK A: METEOROLOGICAL IDENTIFICATION LOGO READOUT TILES -->
+                        <div class="flex-1 bg-slate-950/40 border border-white/5 p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+                            <h3 id="cityName" class="text-lg font-black tracking-wide text-white uppercase">---</h3>
+                            <div class="my-1.5 bg-white/5 p-1 rounded-full border border-white/10 shadow-inner">
+                                <img id="weatherIcon" src="" alt="Climate Status Graphic" class="w-12 h-12 object-contain hidden">
+                            </div>
+                            <p id="description" class="text-[9px] font-extrabold uppercase tracking-widest text-slate-300 bg-white/5 px-2.5 py-0.5 rounded-full border border-white/10 mb-1.5">---</p>
+                            <p id="temp" class="text-4xl font-extrabold tracking-tight text-white">-- °C</p>
+                            <p id="aqiDisplay" class="text-[10px] font-bold tracking-wide uppercase mt-1.5 text-slate-400">AQI: ---</p>
+                        </div>
+
+                        <!-- LAYOUT BLOCK B: THE EXTENDED 5-DAY HORIZONTAL FORWARD PREDICTIVE CARD MATRICES -->
+                        <div class="flex-[1.6] bg-slate-950/40 border border-white/5 p-4 rounded-2xl flex flex-col justify-between min-h-[140px]">
+                            <span class="block text-slate-500 text-[9px] font-bold uppercase tracking-widest border-b border-white/5 pb-1.5 mb-1.5">5-Day Forward Predictive Projection Array</span>
+                            <div id="forecastContainer" class="flex flex-row justify-between items-center gap-1.5 w-full h-full overflow-x-auto no-scrollbar flex-nowrap">
+                                <!-- Horizontal adaptive nodes generated here inside processing streams loop -->
+                            </div>
+                        </div>
+
+                        <!-- LAYOUT BLOCK C: TELEMETRY SUBSYSTEM CONTROLLERS DATA BLOCKS -->
+                        <div class="flex-1 bg-slate-950/40 border border-white/5 p-4 rounded-2xl flex flex-col justify-center gap-2.5 text-center">
+                            <span class="block text-slate-500 text-[9px] font-bold uppercase tracking-widest border-b border-white/5 pb-1 text-left">Telemetry Subsystems</span>
+                            <div class="w-full py-1 border-b border-white/5 flex flex-col justify-center">
+                                <span class="block text-slate-400 text-[9px] font-semibold uppercase tracking-wider mb-0.5">Atmospheric Humidity</span>
+                                <span id="humidity" class="font-extrabold text-xl text-white">--%</span>
+                            </div>
+                            <div class="w-full py-1 flex flex-col justify-center">
+                                <span class="block text-slate-400 text-[9px] font-semibold uppercase tracking-wider mb-0.5">Turbine Wind Velocity</span>
+                                <span id="windSpeed" class="font-extrabold text-xl text-white">-- km/h</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
